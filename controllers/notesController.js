@@ -46,7 +46,7 @@ const createNewNote = async (req, res) => {
     const note = await Note.create({ user, title, text })
 
     if (note) { // Created 
-        return res.status(201).json({ message: 'New note created' })
+        return res.status(201).json({ message: 'New note createdff' })
     } else {
         return res.status(400).json({ message: 'Invalid note data received' })
     }
